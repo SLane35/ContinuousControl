@@ -17,3 +17,38 @@ In order to solve the environment, the agent must get an average score of 30 ove
  - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
 
 2. Place the file in this GitHub repository, in the `ContinuousControl/` folder, and unzip (or decompress) the file. 
+
+3.	Set up the Python environment:
+
+    a.	Create and activate a new environment with Python 3.6.
+    - Linux or Mac:
+        ```
+        conda create –name drlnd python=3.6
+        source activate drlnd
+        ```
+    - Windows:
+        ```
+        conda create –name drlnd python=3.6
+        activate drlnd
+        ```
+    b.	Do a minimal install of OpenAI gym using
+    
+        pip install gym
+    c.	Install the classic control & box2d environments using
+    
+        pip install Box2D
+        pip install gym[all]
+        pip install piglet==1.2.4
+        pip install gym[box2d]
+    d.	Clone the repository, navigate to the python folder, and install dependencies using
+    ```
+    git clone https://github.com/udacity/deep-reinforcement-learning.git
+    cd deep-reinforcement-learning/python
+    pip install .
+    ```
+    e.	Create an IPython kernel for the drlnd environment.
+    
+        python –m ipykernel install –user –name drlnd –display-name “drlnd”
+    f.	Before running the code in the notebook, change the kernel to the “drlnd” kernel that you just created by using the drop-down Kernel menu.
+    
+    g. In order to train the agent, run the code cells sequentially.
